@@ -1,0 +1,9 @@
+[submodule "express-locallibrary-tutorial"]
+	path = express-locallibrary-tutorial
+	url = git@github.com:oladee/express-locallibrary-tutorial.git
+[submodule "miniMessageBoard"]
+	path = miniMessageBoard
+	url = git@github.com:oladee/Odins-Mini-Message.git
+[submodule "odinsNode"]
+	path = odinsNode
+	url = git@github.com:oladee/odinsNode.git
