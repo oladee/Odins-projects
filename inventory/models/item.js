@@ -12,9 +12,9 @@ const itemSchema = new schema({
         required : [true, "please give a proper description of the item"],
         minLength : [3, "Length must be greater than 3 characters"]
     },
-    category : {
+    category :  {
         type : [{type : schema.Types.ObjectId, ref : 'Category'}],
-        required : [true, "Item category required"]
+        required  : [true, "please indicate a category"]
     },
     price : {
         type : Number,

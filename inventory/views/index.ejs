@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%-include("./layout/header.ejs") %>
+    <h1><%= heading %></h1>
+    <main>
+      <h2>Welcome to this brief but simple Inventory management app.</h2>
+
+      <p>Kindly select from the list of categories to check out their concerned items</p>
+    </main>
+
+    <% allCategory.forEach(x => { %>
+      <a href=<%=x.url%>><%= x.name%></a>
+    <%})%>
+
+<%-include("./layout/footer.ejs") %>
