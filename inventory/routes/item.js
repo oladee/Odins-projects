@@ -5,6 +5,6 @@ const itemController = require("../controllers/itemController")
 
 router.get('/', itemController.addItemGet)
 
-// router.post('/addItem',  )
+router.post('/', itemController.addItemPost )
 
 module.exports = router
