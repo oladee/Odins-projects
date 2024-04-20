@@ -1,7 +1,13 @@
 <%-include("./layout/header.ejs") %>
 
 <h1>Add an Item to Category</h1>
-<form action="/addItem" method="post">
+<form action="/addItem" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <img src="/images/placeHolder.jpg" alt="cover image" id="itemImage">
+    <p for="itemImage" id="itemButton">Upload Item Image</p>
+    <input type="file" name="itemImage" class="form-control" id="itemInput" aria-describedby="emailHelp">
+    <h2>please select an image</h2>
+  </div>
     <div class="form-group">
       <label for="itemName">Item Name</label>
       <input type="text" name="name" class="form-control" id="exampleInputEmail1 itemName" aria-describedby="emailHelp">

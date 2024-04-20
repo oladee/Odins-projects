@@ -7,6 +7,7 @@ const itemSchema = new schema({
         type : String,
         required : [true, "Item name required"]
     },
+    image : {type : String},
     desc : {
         type : String,
         required : [true, "please give a proper description of the item"],
