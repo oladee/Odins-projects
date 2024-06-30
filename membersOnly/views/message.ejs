@@ -1,0 +1,20 @@
+<%-include('./layout/header.ejs') %>
+   <section style="width: 100%; max-width: 600px;">
+    <h1 style="margin-bottom: 30px;"><%=title %></h1>
+    <form method="post" action="/newmessage" >
+        <label for="title" style="display: flex; flex-direction: column; gap: 10px;">
+            Topic
+            <input type="text" name="title" id="title" placeholder="Your Topic" style="padding: 8px 10px;">
+        </label>
+
+        <label for="content" style="display: flex; flex-direction: column; gap: 10px; padding-top: 10px;">
+            Content
+            <textarea name="content" placeholder="Content Here..." id="content" rows="20" style="padding:20px 10px;"></textarea>
+        </label>
+        <div style="display: flex; justify-content: center; padding: 10px;">
+            <button style="padding:10px 5px;">Submit</button>
+        </div>
+        
+    </form>
+   </section>
+<%-include('./layout/footer.ejs') %>
